@@ -1,3 +1,9 @@
-pipwerks.SCORM.status("set", "completed");
-pipwerks.SCORM.set("cmi.success_status", "passed");
-top.close();
+/* IN INTERNET EXPLORER TOP LEVEL LESSON */
+{
+   SCORM2004_CallSetValue("cmi.completion_status","completed");
+SCORM2004_CallSetValue("cmi.success_status","passed");
+SCORM2004_CallSetValue("cmi.exit","normal");
+SCORM2004_CallCommit();
+}
+
+
